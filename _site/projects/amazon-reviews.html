@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Hinal Jajal | Representations from Random Walk Diffusions</title>
-  <meta name="description" content="Homepage of Tatsunori Hashimoto">
-  <meta name="author" content="Tatsunori Hashimoto">
+  <title>Hinal Jajal | Network Analysis of Amazon Reviews to Predict Consumer Sentiment</title>
+  <meta name="description" content="Homepage of Hinal Jajal">
+  <meta name="author" content="Hinal Jajal">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -91,7 +91,9 @@
       <div class="container">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
-          <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>
+          <!-- <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li> -->
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
+
           <!---
           <li class="navbar-item"><a class="navbar-link" href=/index.html#people>People</a></li>
           --->
@@ -100,24 +102,20 @@
       </div>
     </nav>
 
+
     <div class="docs-section">
 
   
     <div class="title-subtitle">
-      <h3>Representations from Random Walk Diffusions</h3>
-      <h5>Understanding the link between random-walk similarities and embeddings.</h5>
+      <h3>Network Analysis of Amazon Reviews to Predict Consumer Sentiment</h3>
+      <h5>Predicting consumer sentiment towards unfamiliar products using structural balance + sentiment analysis.</h5>
     </div>
   
 
-  <p><img style="width: 40%; float: left; border: 1px solid black; margin-top: 10px; margin-right: 10px;" src="/assets/projects/2016-embed.png" />
-<strong>Overview:</strong> 
-Structured data such as sequences and networks pose substantial difficulty for traditional statistical theory which has focused on data drawn independently from a vector space. A popular and empirically effective technique for dealing with such data is to map elements of the data to a vector space and to operate over the embedding as a summary statistic. Such a vector representation of discrete objects is known as a `continuous representation’.
-Continuous space models of words, objects, and signals have become ubiquitous tools for learning rich representations of data, from natural language processing to computer vision. Even in cases that the embedding is not explicit, many algorithms operate over similarity measures which implicitly embed the original dataset. In this line of work, we attempt to understand the intuition behind continuous representations. Can we construct a general theory of continuous representations? Are there general principles for semantically meaningful representations?</p>
-
-<p>In order to answer these questions, we develop a framework for analyzing continuous representations through diffusion limits of random walks. We show that measurable quantities of discrete random walks with a latent metric structure have closed form diffusion limits. These diffusion limits allow us to approximate attributes of the discrete random walk such as the stationary distribution, hitting time, or co-occurrence using closed-form expressions from diffusions. We establish limits which guarantee asymptotic consistency of such estimators, and show they work well in practice.</p>
-
-<p>Using this new approach, we solve three classes of problems: first, we derive principled network algorithms which connect statistical estimation tasks such as density estimation to network algorithms such as PageRank [<a href="http://proceedings.mlr.press/v38/hashimoto15.html">Hashimoto+2015</a>][<a href="http://papers.nips.cc/paper/6009-from-random-walks-to-distances-on-unweighted-graph">Hashimoto+2016</a>]. Next, we demonstrated that continuous representations of words are a type of random walk metric estimator with close connections to manifold learning [<a href="https://transacl.org/ojs/index.php/tacl/article/view/809">Hashimoto+2016</a>]. Finally, we apply our theory to single-cell RNA seq data, and derive a way to learn time-series models without trajectories by using stochastic recurrent neural networks [<a href="http://proceedings.mlr.press/v48/hashimoto16.pdf">Hashimoto+2016</a>].</p>
-
+  <!-- <p><img style="width: 40%; float: left; border: 1px solid black; margin-top: 10px; margin-right: 10px;" src="/assets/projects/2016-embed.png" /> -->
+<strong style="font-size:20px">Overview:</strong> 
+<p>Product reviews form a goldmine of text data that is helpful to both consumers and businesses in making buying decisions and understanding consumer needs respectively. In this study, we present a method to convert review text data into a product-reviewer network that can be used to predict consumer sentiment towards a product they have not previously reviewed. Our method utilizes two key techniques in this process: the first is natural language processing to extract the sentiment from thousands of reviews and the second is balance theory to analyze the signed network. We address the challenges in drawing insights from a signed, bipartite network and make use of existing literature on modified balance theory to overcome them. With a carefully sampled dataset of Amazon fashion products’ reviews, we demonstrate the effectiveness of our method in predicting the signs of consumer sentiment. We explore three sign prediction methods, namely the Signed Caterpillar (SCsc), Random Walk Based Models (SBRW), and Matrix Factorization (MFwBT), and successfully implement two of the three with remarkable accuracy. We recognize the several limitations in our processes, including discrete sentiment values and a limited dataset. Future work would expand these promising results into a more comprehensive study addressing the mentioned limitations.</p>
+<p>Detailed study completed for the Math 168 class at UCLA can be found <a href="https://github.com/msaveski/www_personal" target="_blank">here.</a></p>
 
 </div>
 
