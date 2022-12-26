@@ -147,7 +147,7 @@ Whereas Black defendants receive a 'sentence' of zero months in 20% of cases, Wh
 
 <!-- <figure>
   <p><img src="/assets/projects/match-combined.png"
-    alt="Eiffel tower" class="centerImage" width="500">
+    alt="matchrates" class="centerImage" width="500">
   <figcaption>Fig. 1: Match rates (left) and mean sentence length <br>
     (right) in the 15 courts with most sentences in the cases table.</figcaption>
 </figure>
@@ -162,7 +162,7 @@ We therefore focus on Black/White disparity in most of our proceeding analyses. 
 <!-- <center><img src="/assets/projects/virginia-cover.png" alt="Paris" class="centerImage" width="400"></center> -->
 <center><figure>
   <p><img src="/assets/projects/virginia-cover.png"
-    alt="Eiffel tower" class="centerImage" width="500">
+    alt="boxplot" class="centerImage" width="500">
   <figcaption>Fig. 1: Mean sentence length for various racial groups</figcaption>
 </figure></center>
 <br>
@@ -180,7 +180,7 @@ Indeed, obscenity is the only primary offense type which is (a) proportionally m
 <!-- <center><img src="/assets/projects/counts-sentence-lengths.png" alt="Paris" class="centerImage" width="500"></center> -->
 <center><figure>
   <p><img src="/assets/projects/counts-sentence-lengths.png"
-    alt="Eiffel tower" class="centerImage" width="500">
+    alt="chargecodedistributions" class="centerImage" width="500">
   <figcaption>Fig. 2: Proportion of cases under primary charge code effective sentence lengths for Black and White defendants. <br>
     Errorbars give two standard errors in each estimate.
     Codes marked with a star have a difference in mean <br> effective sentence by race with \(p< 0.05\) under a two-sided Welch's \(t\)-test.</figcaption>
@@ -197,12 +197,12 @@ $$\begin{align}
 \end{align}$$
 where each of the symbols appearing in this model are defined in Table 1. 
 In Model 1, the control attributes \(\mathbf{x}_i^{\mathrm{control}}\) for case \(i\) include the age, gender, and presence of criminal history of the defendant, as well as the primary charge code section, trial type, and year of the sentenced offense.  
-Selected coefficients from this model fit are shown in Table 1. 
+Selected coefficients from this model fit are shown in Table 2. 
 The estimate for Black defendants, however, is clearly significant, and corresponds to average sentences that are 10%-16% longer than their White counterparts after accounting for controls. 
 Our primary analytical task is now to evaluate hypotheses that could explain this observed difference. 
 <center><figure>
   <p><img src="/assets/projects/notation.png"
-    alt="Eiffel tower" class="centerImage" width="500">
+    alt="modelnotation" class="centerImage" width="500">
   <figcaption>Table 1: Table of notation for Model 1.</figcaption>
 </figure></center>
 <br>
@@ -210,15 +210,15 @@ Our primary analytical task is now to evaluate hypotheses that could explain thi
 <!-- <center><img src="/assets/projects/coefs.png" alt="Paris" class="centerImage" width="500"></center> -->
 <center><figure>
   <p><img src="/assets/projects/coefs.png"
-    alt="Eiffel tower" class="centerImage" width="500">
-  <figcaption>Table 1: Coefficients of selected variables in Model 1.</figcaption>
+    alt="coefficients" class="centerImage" width="500">
+  <figcaption>Table 2: Coefficients of selected variables in Model 1.</figcaption>
 </figure></center>
 <br>
 
 <p>However, the disparity identified by Model 1 can be almost entirely explained by disparity in <i>guideline</i> sentences. 
   In Model 2, we incorporate the lower bound of the guideline sentence as a control variable in \(\mathbf{x}_i^{\mathrm{control}}\). 
   The model is otherwise identical to Model 1. 
-  Table 2 summarizes the coefficients for the effect of each racial group on the sentence length in Model 2. 
+  Table 3 summarizes the coefficients for the effect of each racial group on the sentence length in Model 2. 
   After controlling for the guideline, the coefficient of Black is much smaller and no longer statistically distinguishable from 0. 
   The estimated percentage change in the sentence provided to Black defendants is between -0.5% and 3.2% as compared to the sentences given to White defendants with the same case characteristics. 
   In further analysis, incorporating guideline sentences while omitting charge code and presence of criminal history further reduces the estimated effect of race. 
@@ -228,8 +228,8 @@ Our primary analytical task is now to evaluate hypotheses that could explain thi
   <!-- <center><img src="/assets/projects/coefs2.png" alt="Paris" class="centerImage" width="500"></center> -->
   <center><figure>
     <p><img src="/assets/projects/coefs2.png"
-      alt="Eiffel tower" class="centerImage" width="500">
-    <figcaption>Table 2: Coefficients of selected variables in Model 2.</figcaption>
+      alt="coefficients" class="centerImage" width="500">
+    <figcaption>Table 3: Coefficients of selected variables in Model 2.</figcaption>
   </figure></center>
   <br>
   
@@ -241,15 +241,15 @@ $$\begin{align}
 \end{align}$$
 where \(Z_{ik}\) is the low guideline sentence in case \(i\) with defendant in racial group \(k\). 
 The control variables are the same as in Model 1. 
-We find that the defendant's race is a strong predictor of the guideline sentence, with Black defendants receiving guideline sentences 18%-23% longer after controls (Table 3). 
+We find that the defendant's race is a strong predictor of the guideline sentence, with Black defendants receiving guideline sentences 18%-23% longer after controls (Table 4). 
 Given this evidence of the presence of racial disparities in the guidelines themselves, we now shift our focus to understanding the specific aspect(s) of the guideline that can explain the bias. 
   </p>
 
   <!-- <center><img src="/assets/projects/coefs3.png" alt="Paris" class="centerImage" width="500"></center> -->
   <center><figure>
     <p><img src="/assets/projects/coefs3.png"
-      alt="Eiffel tower" class="centerImage" width="500">
-    <figcaption>Table 3: Coefficients of selected variables in Model 3.</figcaption>
+      alt="coefficients" class="centerImage" width="500">
+    <figcaption>Table 4: Coefficients of selected variables in Model 3.</figcaption>
   </figure></center>
   <br>
 
@@ -271,7 +271,7 @@ Given this evidence of the presence of racial disparities in the guidelines them
     <!-- <center><img src="/assets/projects/sentence-differences.png" alt="Paris" class="centerImage" width="500"></center> -->
     <center><figure>
       <p><img src="/assets/projects/sentence-differences.png"
-        alt="Eiffel tower" class="centerImage" width="500">
+        alt="meansentence" class="centerImage" width="500">
       <figcaption>Figure 3: Proportion of cases by group and mean effective sentence for Black and White defendants <br> for the six most common charge codes. 
         Together, these codes account for \(59\%\) of all cases in the merged data. <br>
         Error bars give two standard errors from the mean.</figcaption>
@@ -290,7 +290,7 @@ Even for fentanyl and methamphetamine cases, which are much more common among Wh
 <!-- <center><img src="/assets/projects/race-gender-248-250-analysis.png" alt="Paris" class="centerImage" width="500"></center> -->
 <center><figure>
   <p><img src="/assets/projects/race-gender-248-250-analysis.png"
-    alt="Eiffel tower" class="centerImage" width="500">
+    alt="numberofcases" class="centerImage" width="500">
   <figcaption>Figure 4: (First row): Number of cases charged under §18.2-250 (possession) or §18.2-248 (distribution)<br> in which each of the four most common drugs in the data were allegedly present. <br>
     (Second row): Proportion of these cases charged under code §18.2-248, rather than §18.2-250. <br>
     (Third row): Mean low guideline sentence length for cases charged under §18.2-248. <br>
@@ -303,19 +303,19 @@ Even for fentanyl and methamphetamine cases, which are much more common among Wh
 <p>There is evidence of racial disparity in the charge code Black and White defendants are assigned, with the former being charged disproportionately higher for drug crimes related to manufacturing, selling, or distributing (§18.2-248). However, even within the same drug-related charge codes, Black defendants are given higher guideline sentences. Table 6 below summarizes the mean guideline sentence for Black and White defendants within §18.2-248 and §18.2-250. Black defendants receive a mean guideline sentence for each of §18.2-248 and §18.2-250 that is nearly two times greater than the mean for their White counterparts. </p>
 <center><figure>
   <p><img src="/assets/projects/mean_guideline.png"
-    alt="Eiffel tower" class="centerImage" width="500">
-  <figcaption>Table 4: Mean Guideline for Black and White Defendants Charged with §18.2-248 and §18.2-250.</figcaption>
+    alt="meanguideline" class="centerImage" width="500">
+  <figcaption>Table 5: Mean Guideline for Black and White Defendants Charged with §18.2-248 and §18.2-250.</figcaption>
 </figure></center>
 <br>
 
 <!-- <center><img src="/assets/projects/mean_guideline.png" alt="Paris" class="centerImage" width="500"></center> -->
 
-<p>We further build on the model predicting the guideline sentence (Model 3) and include the charge code section as a predictor variable. Table 5 below presents the effect of each racial group on the guideline sentence when controlled for the charge code section, sentencing year, and  defendant's demographics (age and gender). We observe that the coefficient of Black race reduces as compared to the previous model without controlling for the charge code but remains positive. The combined results of this section and section 3.3.4 suggest that there is disparity against Black defendants both in the assignment of the drug-related charges and in the sentencing within those charges. 
+<p>We further build on the model predicting the guideline sentence (Model 3) and include the charge code section as a predictor variable. Table 6 below presents the effect of each racial group on the guideline sentence when controlled for the charge code section, sentencing year, and  defendant's demographics (age and gender). We observe that the coefficient of Black race reduces as compared to the previous model without controlling for the charge code but remains positive. The combined results of this section and section 3.3.4 suggest that there is disparity against Black defendants both in the assignment of the drug-related charges and in the sentencing within those charges. 
 </p>
 <center><figure>
   <p><img src="/assets/projects/table5.png"
-    alt="Eiffel tower" class="centerImage" width="500">
-  <figcaption>Table 5: Coefficients in a model to predict guideline sentences with charge code section included as a predictor variable.</figcaption>
+    alt="coefficients" class="centerImage" width="500">
+  <figcaption>Table 6: Coefficients in a model to predict guideline sentences with charge code section included as a predictor variable.</figcaption>
 </figure></center>
 <br>
 
